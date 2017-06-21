@@ -6,7 +6,7 @@ import { Jane, JaneLayer } from '../dist';
 import TransportationJaneLayer from './transportation/JaneLayer';
 import DummyComponent from './DummyComponent';
 
-import './node_modules/jane-maps/dist/styles.css';
+import '../dist/styles.css';
 
 injectTapEventPlugin();
 
