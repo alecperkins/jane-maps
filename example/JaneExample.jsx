@@ -53,7 +53,7 @@ const JaneExample = () => {
             icon="university"
             component={<DummyComponent />}
           />
-          { /* TransportationJaneLayer() */ }
+          { TransportationJaneLayer() }
         </Jane>
       </div>
     </MuiThemeProvider>
