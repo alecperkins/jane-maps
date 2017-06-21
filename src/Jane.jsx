@@ -254,7 +254,7 @@ class Jane extends React.Component {
                 {...this.props.searchConfig}
                 onGeocoderSelection={this.showPoiMarker}
                 onClear={this.hidePoiMarker}
-                selectionActive={this.state.poiFeature}
+                selectionActive={this.state.poiFeature != null }
                 leftOffset={leftOffset}
               />
             )
