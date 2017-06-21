@@ -49,7 +49,9 @@ class Jane extends React.Component {
     this.setState({ mapLoaded: true });
   }
 
-  getFilteredChildren = () => this.props.children.filter(child => child.type && child.type.displayName === 'JaneLayer');
+  getFilteredChildren = () => {
+    return React.Children.toArray(this.props.children).filter( child => child.type && child.type.displayName === 'JaneLayer');
+  }
 
   handleLayerReorder = (layers) => {
     const layerOrder = layers.map(layer => layer.id);
